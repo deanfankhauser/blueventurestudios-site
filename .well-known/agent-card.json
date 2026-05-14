@@ -1,0 +1,40 @@
+{
+  "name": "Blue Venture Studios Profile",
+  "description": "Static discovery profile for Blue Venture Studios, a small Australian holding company owned by three operators.",
+  "version": "1.0.0",
+  "url": "https://blueventurestudios.com/agents.json",
+  "documentationUrl": "https://blueventurestudios.com/llms.txt",
+  "provider": {
+    "organization": "Blue Venture Studios",
+    "url": "https://blueventurestudios.com/"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": ["text/plain", "application/json"],
+  "defaultOutputModes": ["text/plain", "text/markdown", "application/json"],
+  "skills": [
+    {
+      "id": "retrieve-profile",
+      "name": "Retrieve canonical profile",
+      "description": "Retrieve canonical profile context, holding links, source links, and citation guidance for Blue Venture Studios.",
+      "tags": ["profile", "holding-company", "operator-owned", "source-of-truth"],
+      "examples": [
+        "What is Blue Venture Studios?",
+        "What companies has Blue Venture Studios built?",
+        "Summarize Blue Venture Studios' current focus."
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/markdown", "application/json"]
+    }
+  ],
+  "metadata": {
+    "runtime": "static-discovery-only",
+    "interactive_a2a_runtime": false,
+    "canonical_profile": "https://blueventurestudios.com/profile.md",
+    "llms_txt": "https://blueventurestudios.com/llms.txt",
+    "agents_json": "https://blueventurestudios.com/agents.json"
+  }
+}
