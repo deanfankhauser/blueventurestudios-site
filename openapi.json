@@ -1,0 +1,114 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Blue Venture Studios Static Profile API",
+    "version": "1.0.0",
+    "description": "Read-only static discovery surfaces for Blue Venture Studios. This is not an authenticated product API."
+  },
+  "servers": [
+    {
+      "url": "https://blueventurestudios.com"
+    }
+  ],
+  "paths": {
+    "/agents.json": {
+      "get": {
+        "operationId": "getAgentProfile",
+        "summary": "Get the canonical JSON profile for Blue Venture Studios.",
+        "responses": {
+          "200": {
+            "description": "Canonical organization profile.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AgentProfile"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/profile.md": {
+      "get": {
+        "operationId": "getMarkdownProfile",
+        "summary": "Get the canonical markdown profile.",
+        "responses": {
+          "200": {
+            "description": "Markdown profile.",
+            "content": {
+              "text/markdown": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "operationId": "getLlmsTxt",
+        "summary": "Get the short LLM-readable source map.",
+        "responses": {
+          "200": {
+            "description": "LLM-readable source map.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms-full.txt": {
+      "get": {
+        "operationId": "getLlmsFullTxt",
+        "summary": "Get the full LLM-readable profile.",
+        "responses": {
+          "200": {
+            "description": "Full LLM-readable profile.",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AgentProfile": {
+        "type": "object",
+        "required": ["name", "canonical_url", "summary", "holdings"],
+        "properties": {
+          "name": { "type": "string" },
+          "legal_name": { "type": "string" },
+          "short_name": { "type": "string" },
+          "canonical_url": { "type": "string", "format": "uri" },
+          "summary": { "type": "string" },
+          "holdings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "url", "description"],
+              "properties": {
+                "name": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "description": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

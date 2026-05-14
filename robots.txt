@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://blueventurestudios.com/sitemap.xml
+
+Host: blueventurestudios.com
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

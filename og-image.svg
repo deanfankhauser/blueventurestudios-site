@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Blue Venture Studios">
+  <rect width="1200" height="630" fill="#070809"/>
+  <path d="M80 82h1040v466H80z" fill="#101214" stroke="rgba(255,255,255,.18)"/>
+  <path d="M120 122h280v280H120z" fill="#181b1e" stroke="#6f8cff" stroke-width="3"/>
+  <text x="160" y="305" fill="#f4f2ed" font-family="Inter, Arial, sans-serif" font-size="118" font-weight="800">BVS</text>
+  <text x="470" y="238" fill="#f4f2ed" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="800">Blue Venture Studios</text>
+  <text x="474" y="316" fill="#a4a7ad" font-family="Inter, Arial, sans-serif" font-size="34">Memo to the reader</text>
+  <text x="474" y="376" fill="#a4a7ad" font-family="Inter, Arial, sans-serif" font-size="30">A holding company three people happen to own</text>
+</svg>

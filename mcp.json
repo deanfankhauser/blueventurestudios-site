@@ -1,0 +1,23 @@
+{
+  "name": "Blue Venture Studios",
+  "description": "Static discovery metadata for Blue Venture Studios. There is no interactive MCP runtime at this domain.",
+  "version": "1.0.0",
+  "runtime": "static-discovery-only",
+  "interactive_mcp_runtime": false,
+  "canonical_url": "https://blueventurestudios.com/",
+  "resources": {
+    "profile": "https://blueventurestudios.com/profile.md",
+    "llms": "https://blueventurestudios.com/llms.txt",
+    "llms_full": "https://blueventurestudios.com/llms-full.txt",
+    "json_profile": "https://blueventurestudios.com/agents.json",
+    "openapi": "https://blueventurestudios.com/openapi.json",
+    "agent_card": "https://blueventurestudios.com/.well-known/agent-card.json"
+  },
+  "capabilities": {
+    "tools": false,
+    "resources": true,
+    "prompts": false,
+    "sampling": false,
+    "ui": false
+  }
+}
