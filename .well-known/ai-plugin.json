@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Blue Venture Studios",
+  "name_for_model": "blue_venture_studios",
+  "description_for_human": "Canonical static profile for Blue Venture Studios.",
+  "description_for_model": "Use this plugin manifest to discover read-only static profile files for Blue Venture Studios. The site describes BVS as a small Australian holding company owned by three operators, with holdings Bitcompare, Movingto, funds.movingto, and Robozaps.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://blueventurestudios.com/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://blueventurestudios.com/favicon.svg",
+  "contact_email": "hello@blu.ventures",
+  "legal_info_url": "https://blueventurestudios.com/"
+}
